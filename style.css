@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+      --renk1:#003049;
+      --renk2:#D62828;
+      --renk3:#EAE2B7;
+}
+
+body {
+      text-align: center;
+      padding: 0px;
+      margin: auto 0;
+      background-image: url("bg.jpg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: 100vw;
+      position:relative;
+    
+}
+
+* {
+            box-sizing: border-box;
+            font-family: "Raleway", sans-serif;
+            font-optical-sizing: auto;
+            font-weight:500;
+            font-style: normal;
+            font-size: 12px !important;
+            letter-spacing: 2px;
+}
+
+nav {
+
+      position: fixed;
+      top: 20px;
+      height:50px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:0px;
+     
+}
+
+nav > ul {
+      margin: auto;
+      padding: 0px;
+      height: 100%;
+      width: fit-content;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap:2px;
+}
+
+nav > ul >  li {
+      display: inline-block;
+      height:100%;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      position:relative;
+}
+
+nav ul li a {
+      background-color: var(--renk1);
+      color: var(--renk3);
+      font-size: 15px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      height:50px;
+      width:200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+}
+
+nav ul li a:hover {
+      background-color: var(--renk2);
+      transition: 400ms ease;
+}
+
+/* DROP DOWN  SUB MENU */
+
+ul.submenu {
+      height: fit-content;
+      width: 120%;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position:absolute;
+      left:50%;
+      transform: translate(-50%);
+      top:50px;
+      gap: 0px;
+      z-index: 100;
+ 
+  
+    
+    
+    }
+
+ul.submenu >  li {
+      display:block;
+      height:50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+ul.submenu > li >  a {
+      background-color: var(--renk1);
+      color: var(--renk3);
+      font-size: 15px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      height: 100%;
+      width:200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--renk3);
+}
+
+ul.submenu li a:hover {
+      background-color: var(--renk2);
+      transition: 400ms ease;
+}
+
+.openmenu {
+      display: block;
+}
+
+h1.dropdown {
+      font-size: 50px !important;
+      letter-spacing: 15px;
+      width: fit-content;
+      background-color:rgba(0,0,0,0.5);
+      color: #EAE2B7;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border-radius: 5px;
+      padding: 5px;
+    
+}
